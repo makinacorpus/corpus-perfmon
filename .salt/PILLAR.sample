@@ -1,0 +1,21 @@
+#
+# This file contains default values which are used
+# by the salt states deploying your project.
+# you may copy them to your relevant PILLAR file
+# before editing them.
+# If you need to add variables, this is where to begin.
+# Please keep defaults in there, but real passwords
+# must be putted inside pillar
+#
+# replace project_name in your pillar by
+# the current projectname
+# you can also merge parts of this file
+# with the relevant pillar
+#
+# think that dicts are updated/merged with default
+# but lists are overidden
+makina-projects.projectname:
+  data:
+    url: "https://github.com/makinacorpus/perfmon-agent/releases/download/noexec/ServerAgent-2.2.3-RC1.zip"
+    hash: "sha1=3bda066b1f8fbd72e5cbe584f374ad48f42c2f7f"
+# vim:set ft=sls:
